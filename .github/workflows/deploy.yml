@@ -19,7 +19,7 @@ jobs:
         run: npm install aws-cdk
 
       - name: Set up application
-        run: pip install -r ../infrastructure/requirements.txt
+        run: pip install -r ../../infrastructure/requirements.txt
 
       - name: Deploy
         run: npx cdk deploy --require-approval=never
